@@ -1,8 +1,8 @@
 .section-auth {
     max-width: 1170px;
     width: 80vw;
+    padding: 3rem 0;
     display: grid;
-    padding: 5rem 2rem;
     margin: 0 auto;
     opacity: 0;    
     transition: opacity .7s;
@@ -10,6 +10,7 @@
 @media screen and (min-width: 998px){
     .section-auth{
         // display: grid;
+        padding: 5rem 2rem;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 2rem;
     }

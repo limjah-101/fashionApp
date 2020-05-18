@@ -1,7 +1,8 @@
 import React from 'react';
 import SignIn from '../../components/signIn/SignIn';
-import './auth.styles.scss';
+import SignUp from '../../components/signUp/signUp';
 
+import './auth.styles.scss';
 
 class Auth extends React.Component {
 
@@ -17,7 +18,7 @@ class Auth extends React.Component {
         return ( 
             <section className="section-auth">
                 <SignIn />
-                
+                <SignUp  />
             </section>
         );
     }

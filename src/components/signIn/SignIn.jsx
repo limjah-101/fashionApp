@@ -5,6 +5,7 @@ import CustomBtn from '../customBtn/customBtn';
 
 import { signInWithGoogle } from '../../firebase/firebase.utils';
 
+
 class SignIn extends Component {
     
     constructor() {
@@ -50,7 +51,7 @@ class SignIn extends Component {
                         />                
                     <div className="form-footer">
                         <CustomBtn type="submit">sign in</CustomBtn>
-                        <CustomBtn onClick={ signInWithGoogle }>sign in with Google</CustomBtn>
+                        <CustomBtn isGoogleBtn={true} onClick={ signInWithGoogle }>Google Sign In</CustomBtn>
                     </div>
                     
                 </form>
