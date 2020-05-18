@@ -1,0 +1,18 @@
+.homepage {
+    padding: 3rem 0;
+    opacity: 0;
+    transition: opacity .7s;
+}
+
+@media screen and (min-width: 776px) {
+    .homepage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem 5rem;
+    }
+}
+
+.fade-in {
+    opacity: 1;
+}
