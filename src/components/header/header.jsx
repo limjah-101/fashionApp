@@ -5,6 +5,10 @@ import './header.styles.scss';
 
 import { auth } from '../../firebase/firebase.utils';
 
+const signOut = () => {
+    auth.signOut();
+    window.location = '/signin';
+}
 const Header = ({ currentUser }) => {
     return ( 
         <nav className="header">
@@ -15,7 +19,7 @@ const Header = ({ currentUser }) => {
                 <Link to="/shop">Shop</Link>
                 <Link to="/contact">Contact</Link>      
                 { currentUser 
-                    ? <div onClick={ () => auth.signOut() }>Sign Out</div>
+                    ? <div onClick={ () => signOut() }>Sign Out</div>
                     : <Link to="/signin">Sign In</Link>
                 }          
                  
