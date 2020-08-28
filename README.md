@@ -1,4 +1,4 @@
-#School project
+# School project
 
-#SIMPLE E-COMMERCE APP
+# E-COMMERCE APP
 ReactJs | Redux | GraphQl | Stripe | Firebase
