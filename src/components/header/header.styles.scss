@@ -1,6 +1,6 @@
 .header {
     max-width: 1440px;
-    padding: 1rem 3rem;
+    padding: .5rem;
     display: grid;    
     grid-template-columns: 1fr 400px; 
     justify-content: space-between;   
@@ -36,5 +36,14 @@
             }
         }
         
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    .header{
+        .options{
+            display: none;
+        }
     }
 }
